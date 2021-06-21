@@ -1,9 +1,15 @@
 import React from "react";
 
+import NavBar from "./components/nav-bar/navBar";
+import Planet from "./components/planets/planets";
+
+import "./index.css";
+
 const App = () => {
 	return (
-		<div>
-			<h1>App</h1>
+		<div className="app">
+			<NavBar />
+			<Planet />
 		</div>
 	);
 };
