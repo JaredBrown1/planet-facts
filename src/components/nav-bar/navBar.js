@@ -1,23 +1,25 @@
 import React from "react";
 
+import { NavContainer, NavLinks } from "./navBar.styles";
+
 const NavBar = () => {
 	return (
-		<div>
+		<NavContainer>
 			<div>
 				<h1>THE PLANETS</h1>
 			</div>
 
 			<div>
-				<a href="#">MERCURY</a>
-				<a href="#">VENUS</a>
-				<a href="#">EARTH</a>
-				<a href="#">MARS</a>
-				<a href="#">JUPITER</a>
-				<a href="#">SATURN</a>
-				<a href="#">URANUS</a>
-				<a href="#">NEPTUNE</a>
+				<a href="/mercury">MERCURY</a>
+				<a href="/venus">VENUS</a>
+				<a href="/earth">EARTH</a>
+				<a href="/mars">MARS</a>
+				<a href="/jupiter">JUPITER</a>
+				<a href="/saturn">SATURN</a>
+				<a href="/uranus">URANUS</a>
+				<a href="/neptune">NEPTUNE</a>
 			</div>
-		</div>
+		</NavContainer>
 	);
 };
 
