@@ -34,3 +34,21 @@ export const PlanetDescription = styled.div`
 		line-height: 25px;
 	}
 `;
+
+export const Tabs = styled.div`
+	display: flex;
+	align-items: center;
+	width: 350px;
+	height: 48px;
+	border: solid 1px #d8d8d8;
+	margin-bottom: 10px;
+	p {
+		font-size: 12px;
+		padding-left: 20px;
+	}
+	h3 {
+		padding-left: 100px;
+		font-family: Spartan;
+		font-size: 12px;
+	}
+`;

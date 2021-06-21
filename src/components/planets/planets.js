@@ -5,6 +5,7 @@ import {
 	Container2,
 	PlanetDescription,
 	PlanetImage,
+	Tabs,
 } from "./planets.styles";
 
 import Image from "../../images/planet-mercury.svg";
@@ -19,7 +20,6 @@ const Planet = () => {
 				<PlanetDescription>
 					<h1>MERCURY</h1>
 					<p>
-						{" "}
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vel
 						non distinctio in sit maxime minus. Iure sapiente incidunt fugiat
 						sed modi accusamus magnam ut rem nam quaerat? Corporis, atque? Lorem
@@ -28,9 +28,20 @@ const Planet = () => {
 						modi accusamus magnam ut rem nam quaerat? Corporis, atque?
 					</p>
 					<p>source</p>
-					<div>overview</div>
-					<div>interal structure</div>
-					<div>surface geology</div>
+					<div>
+						<Tabs>
+							<p>01</p>
+							<h3>OVERVIEW</h3>
+						</Tabs>
+						<Tabs>
+							<p>02</p>
+							<h3>INTERNAL STRUCTURE</h3>
+						</Tabs>
+						<Tabs>
+							<p>01</p>
+							<h3>SURFACE GEOLOGY</h3>
+						</Tabs>
+					</div>
 				</PlanetDescription>
 			</Container>
 
