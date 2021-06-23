@@ -8,16 +8,25 @@ import {
 	PlanetStats,
 } from "./planets.styles";
 
-const Planet = (props) => {
+const Planet = ({ props, match }) => {
+	const paramItemId = match.params.id;
+
+	const planetResults = props.filter(
+		(planet) => planet.id === Number(paramItemId)
+	);
+
+	const planet = planetResults[0];
+	console.log("Planet: ", planet);
+
 	return (
 		<div>
 			<Container>
 				<div>
-					<img src={props.images} alt="planet" />
+					<img src={planet.images.planet} alt="planet" />
 				</div>
 				<PlanetDescription>
-					<h1>{props.name}</h1>
-					<p>{props.overview}</p>
+					<h1>{planet.name}</h1>
+					<p>{planet.overview.content}</p>
 					<p>source</p>
 					<div>
 						<Tabs>
@@ -39,19 +48,19 @@ const Planet = (props) => {
 			<Container2>
 				<PlanetStats>
 					<p>ROTATION TIME</p>
-					<h1>{props.rotation}</h1>
+					<h1>{planet.rotation}</h1>
 				</PlanetStats>
 				<PlanetStats>
 					<p>REVOLUTION TIME</p>
-					<h1>{props.revolution}</h1>
+					<h1>{planet.revolution}</h1>
 				</PlanetStats>
 				<PlanetStats>
 					<p>RADIUS</p>
-					<h1>{props.radius}</h1>
+					<h1>{planet.radius}</h1>
 				</PlanetStats>
 				<PlanetStats>
 					<p>AVERAGE TEMP</p>
-					<h1>{props.temperature}</h1>
+					<h1>{planet.temperature}</h1>
 				</PlanetStats>
 			</Container2>
 		</div>

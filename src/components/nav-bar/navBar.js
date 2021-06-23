@@ -10,14 +10,14 @@ const NavBar = () => {
 			</div>
 
 			<div>
-				<a href="/mercury">MERCURY</a>
-				<a href="/venus">VENUS</a>
-				<a href="/earth">EARTH</a>
-				<a href="/mars">MARS</a>
-				<a href="/jupiter">JUPITER</a>
-				<a href="/saturn">SATURN</a>
-				<a href="/uranus">URANUS</a>
-				<a href="/neptune">NEPTUNE</a>
+				<a href="/0">MERCURY</a>
+				<a href="/1">VENUS</a>
+				<a href="/2">EARTH</a>
+				<a href="/3">MARS</a>
+				<a href="/4">JUPITER</a>
+				<a href="/5">SATURN</a>
+				<a href="/6">URANUS</a>
+				<a href="/7">NEPTUNE</a>
 			</div>
 		</NavContainer>
 	);

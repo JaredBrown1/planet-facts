@@ -1,3 +1,4 @@
+// planet images
 import Mercury1 from "./planet-mercury.svg";
 import Venus1 from "./planet-venus.svg";
 import Earth1 from "./planet-earth.svg";
@@ -5,10 +6,14 @@ import Mars1 from "./planet-mars.svg";
 import Jupiter1 from "./planet-jupiter.svg";
 import Saturn1 from "./planet-saturn.svg";
 import Uranus1 from "./planet-uranus.svg";
-import Neptune1 from "./planet-mercury.svg";
+import Neptune1 from "./planet-neptune.svg";
 
-export const Data = [
+// internal images
+// geology images
+
+export default [
 	{
+		id: 0,
 		name: "Mercury",
 		overview: {
 			content:
@@ -37,6 +42,7 @@ export const Data = [
 		},
 	},
 	{
+		id: 1,
 		name: "Venus",
 		overview: {
 			content:
@@ -64,6 +70,7 @@ export const Data = [
 		},
 	},
 	{
+		id: 2,
 		name: "Earth",
 		overview: {
 			content:
@@ -91,6 +98,7 @@ export const Data = [
 		},
 	},
 	{
+		id: 3,
 		name: "Mars",
 		overview: {
 			content:
@@ -118,6 +126,7 @@ export const Data = [
 		},
 	},
 	{
+		id: 4,
 		name: "Jupiter",
 		overview: {
 			content:
@@ -146,6 +155,7 @@ export const Data = [
 		},
 	},
 	{
+		id: 5,
 		name: "Saturn",
 		overview: {
 			content:
@@ -173,6 +183,7 @@ export const Data = [
 		},
 	},
 	{
+		id: 6,
 		name: "Uranus",
 		overview: {
 			content:
@@ -200,6 +211,7 @@ export const Data = [
 		},
 	},
 	{
+		id: 7,
 		name: "Neptune",
 		overview: {
 			content:
