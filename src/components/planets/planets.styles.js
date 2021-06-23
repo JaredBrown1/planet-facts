@@ -14,12 +14,10 @@ export const Container2 = styled.div`
 	align-items: center;
 `;
 
-export const PlanetImage = styled.div`
-	padding-top: 50px;
-`;
-
 export const PlanetDescription = styled.div`
+	padding-top: 50px;
 	padding-left: 300px;
+	padding-bottom: 100px;
 	margin-right: -50px;
 	width: 400px;
 	text-align: left;
@@ -27,6 +25,7 @@ export const PlanetDescription = styled.div`
 		font-size: 80px;
 		font-family: Antonio;
 		font-weight: lighter;
+		line-height: 20px;
 	}
 	p {
 		font-size: 14px;
@@ -47,8 +46,25 @@ export const Tabs = styled.div`
 		padding-left: 20px;
 	}
 	h3 {
-		padding-left: 100px;
+		padding-left: 50px;
 		font-family: Spartan;
 		font-size: 12px;
+	}
+`;
+
+export const PlanetStats = styled.div`
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 255px;
+	height: 128px;
+	border: solid 1px #d8d8d8;
+	p {
+		font-size: 11px;
+		font-family: Spartan;
+	}
+	h1 {
+		font-size: 40px;
+		font-family: Antonio;
 	}
 `;

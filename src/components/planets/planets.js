@@ -4,29 +4,20 @@ import {
 	Container,
 	Container2,
 	PlanetDescription,
-	PlanetImage,
 	Tabs,
+	PlanetStats,
 } from "./planets.styles";
 
-import Image from "../../images/planet-mercury.svg";
-
-const Planet = () => {
+const Planet = (props) => {
 	return (
 		<div>
 			<Container>
-				<PlanetImage>
-					<img src={Image} alt="mercury" />
-				</PlanetImage>
+				<div>
+					<img src={props.images} alt="planet" />
+				</div>
 				<PlanetDescription>
-					<h1>MERCURY</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vel
-						non distinctio in sit maxime minus. Iure sapiente incidunt fugiat
-						sed modi accusamus magnam ut rem nam quaerat? Corporis, atque? Lorem
-						ipsum dolor sit amet, consectetur adipisicing elit. Nisi vel non
-						distinctio in sit maxime minus. Iure sapiente incidunt fugiat sed
-						modi accusamus magnam ut rem nam quaerat? Corporis, atque?
-					</p>
+					<h1>{props.name}</h1>
+					<p>{props.overview}</p>
 					<p>source</p>
 					<div>
 						<Tabs>
@@ -46,22 +37,22 @@ const Planet = () => {
 			</Container>
 
 			<Container2>
-				<div>
-					<p>rotation time</p>
-					<h1>58.6 days</h1>
-				</div>
-				<div>
-					<p>rotation time</p>
-					<h1>58.6 days</h1>
-				</div>
-				<div>
-					<p>rotation time</p>
-					<h1>58.6 days</h1>
-				</div>
-				<div>
-					<p>rotation time</p>
-					<h1>58.6 days</h1>
-				</div>
+				<PlanetStats>
+					<p>ROTATION TIME</p>
+					<h1>{props.rotation}</h1>
+				</PlanetStats>
+				<PlanetStats>
+					<p>REVOLUTION TIME</p>
+					<h1>{props.revolution}</h1>
+				</PlanetStats>
+				<PlanetStats>
+					<p>RADIUS</p>
+					<h1>{props.radius}</h1>
+				</PlanetStats>
+				<PlanetStats>
+					<p>AVERAGE TEMP</p>
+					<h1>{props.temperature}</h1>
+				</PlanetStats>
 			</Container2>
 		</div>
 	);
