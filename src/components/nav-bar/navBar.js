@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { NavContainer } from "./navBar.styles";
 
@@ -10,14 +11,14 @@ const NavBar = () => {
 			</div>
 
 			<div>
-				<a href="/0">MERCURY</a>
-				<a href="/1">VENUS</a>
-				<a href="/2">EARTH</a>
-				<a href="/3">MARS</a>
-				<a href="/4">JUPITER</a>
-				<a href="/5">SATURN</a>
-				<a href="/6">URANUS</a>
-				<a href="/7">NEPTUNE</a>
+				<Link to="/0">MERCURY</Link>
+				<Link to="/1">VENUS</Link>
+				<Link to="/2">EARTH</Link>
+				<Link to="/3">MARS</Link>
+				<Link to="/4">JUPITER</Link>
+				<Link to="/5">SATURN</Link>
+				<Link to="/6">URANUS</Link>
+				<Link to="/7">NEPTUNE</Link>
 			</div>
 		</NavContainer>
 	);
