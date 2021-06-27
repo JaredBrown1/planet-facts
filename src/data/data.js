@@ -9,6 +9,14 @@ import Uranus1 from "./planet-uranus.svg";
 import Neptune1 from "./planet-neptune.svg";
 
 // internal images
+import Mercury2 from "./planet-mercury-internal.svg";
+import Venus2 from "./planet-venus-internal.svg";
+import Earth2 from "./planet-earth-internal.svg";
+import Mars2 from "./planet-mars-internal.svg";
+import Jupiter2 from "./planet-jupiter-internal.svg";
+import Saturn2 from "./planet-saturn-internal.svg";
+import Uranus2 from "./planet-uranus-internal.svg";
+import Neptune2 from "./planet-neptune-internal.svg";
 // geology images
 
 export default [
@@ -37,7 +45,7 @@ export default [
 		temperature: "430°c",
 		images: {
 			planet: Mercury1,
-			internal: "src/data/planet-mercury-internal.svg",
+			internal: Mercury2,
 			geology: "./assets/geology-mercury.png",
 		},
 	},
@@ -65,7 +73,7 @@ export default [
 		temperature: "471°c",
 		images: {
 			planet: Venus1,
-			internal: "./assets/planet-venus-internal.svg",
+			internal: Venus2,
 			geology: "./assets/geology-venus.png",
 		},
 	},
@@ -93,7 +101,7 @@ export default [
 		temperature: "16°c",
 		images: {
 			planet: Earth1,
-			internal: "./assets/planet-earth-internal.svg",
+			internal: Earth2,
 			geology: "./assets/geology-earth.png",
 		},
 	},
@@ -121,7 +129,7 @@ export default [
 		temperature: "-28°c",
 		images: {
 			planet: Mars1,
-			internal: "./assets/planet-mars-internal.svg",
+			internal: Mars2,
 			geology: "./assets/geology-mars.png",
 		},
 	},
@@ -150,7 +158,7 @@ export default [
 		temperature: "-108°c",
 		images: {
 			planet: Jupiter1,
-			internal: "./assets/planet-jupiter-internal.svg",
+			internal: Jupiter2,
 			geology: "./assets/geology-jupiter.png",
 		},
 	},
@@ -178,7 +186,7 @@ export default [
 		temperature: "-138°c",
 		images: {
 			planet: Saturn1,
-			internal: "./assets/planet-saturn-internal.svg",
+			internal: Saturn2,
 			geology: "./assets/geology-saturn.png",
 		},
 	},
@@ -206,7 +214,7 @@ export default [
 		temperature: "-195°c",
 		images: {
 			planet: Uranus1,
-			internal: "./assets/planet-uranus-internal.svg",
+			internal: Uranus2,
 			geology: "./assets/geology-uranus.png",
 		},
 	},
@@ -234,7 +242,7 @@ export default [
 		temperature: "-201°c",
 		images: {
 			planet: Neptune1,
-			internal: "./assets/planet-neptune-internal.svg",
+			internal: Neptune2,
 			geology: "./assets/geology-neptune.png",
 		},
 	},
