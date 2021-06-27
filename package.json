@@ -41,6 +41,8 @@
 	},
 	"typings": "./dist/index.d.ts",
 	"devDependencies": {
-		"@types/react-dom": "^17.0.8"
+		"@types/react-dom": "^17.0.8",
+		"@types/react-router-dom": "^5.1.7",
+		"@types/styled-components": "^5.1.10"
 	}
 }

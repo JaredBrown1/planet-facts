@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import NavBar from "./components/nav-bar/navBar";
+import NavBar from "./components/nav-bar/navBar.tsx";
 import Planet from "./components/planets/planets";
 
 import "./index.css";
